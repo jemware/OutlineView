@@ -242,9 +242,6 @@ extension TreeMap: CustomStringConvertible {
 }
 
 @available(macOS 10.15, *)
-extension TreeMap.Node: Equatable {}
-
-@available(macOS 10.15, *)
 extension TreeMap: Equatable {
     static func == (lhs: TreeMap<D>, rhs: TreeMap<D>) -> Bool {
         lhs.directory == rhs.directory && lhs.rootData == rhs.rootData
